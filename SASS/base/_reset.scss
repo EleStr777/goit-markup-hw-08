@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    padding-left: 0;
+}
+.list {
+    padding-left: 0;
+}
+.link {
+    text-decoration: none;}
+.item {
+    list-style-type: none;}
+input, textarea {
+    outline: none;
+}
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+img {
+    display: block;
+}
+.team__img {
+    display: block;
+ }
+ .team {
+    background-color: var(--section-background);
+}

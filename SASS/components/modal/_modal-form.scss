@@ -1,0 +1,177 @@
+.modal-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+.modal-form__action {
+    display: block;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin-bottom: 12px;
+    color: var(--main-grey);
+}
+.modal-form__label {
+    display: block;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--main-color);
+    margin-bottom: 4px;
+}
+.modal-form__field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal-form__icon {
+    position: absolute;
+    margin-left: 12px;
+    padding: 6px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    transition: fill var(--anim-fast);
+    /*background-color: tomato;*/
+}
+.modal-form__input {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: inherit;
+    transition: background-color var(--anim-fast), border-color var(--anim-fast);
+
+    &:active, &:focus, &:hover {
+        border-color: var(--select-color);
+    }
+}
+
+.modal-form__comment {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 00.01em;
+    display: block;
+    height: 120px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    font: inherit;
+    resize: none;
+    &::placeholder {
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.14;
+        color: rgba(117, 117, 117, 0.5);
+    }
+    &:active, &:focus, &:hover {
+        border-color: var(--select-color);
+    }
+}
+
+
+.modal-form__comment:placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5); 
+}
+.modal-form__input:focus + .modal-form__icon, .modal-form__input:hover + .modal-form__icon {
+    fill: var(--select-color);
+}
+.topic-option {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.modal-form__check-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.modal-form__checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.modal-form__check-icon {
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 2px solid var(--bleak-text);
+    transition: background-color var(--anim-fast), color var(--anim-fast), border var(--anim-fast), transform (--anim-fast);
+}
+.modal-form__checkbox-input:checked + .modal-form__check-icon {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+}
+
+.modal-form__check-desc, .modal-form__check-link {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
+.modal-form__check-desc{
+    color: #757575;
+}
+.modal-form__check-link {
+    margin-left: 3px;
+    text-decoration-line: underline;
+    color: var(--select-color);
+}
+
+/*Кнопка заказа услуги*/
+.modal-form__request-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    border-radius: 4px;
+    border: 0;
+    border-color: var(--select-color);
+    color: var(--white-text);
+    background-color: var(--select-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /*transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition: background-color var(--anim-fast), border-color var(--anim-fast), box-shadow var(--anim-fast);
+    &:hover, &:focus {
+        background-color: var(--activ-btn);
+        border-color: var(--activ-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+

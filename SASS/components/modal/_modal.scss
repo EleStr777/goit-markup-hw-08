@@ -1,0 +1,40 @@
+@import "./backdrop";
+
+
+.modal {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    padding: 40px;
+    width: 528px;
+    background-color: var(--main-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--anim-fast), opacity var(--anim-fast), scale var(--anim-fast);
+}
+.modal__btn-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    padding: 0px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: var(--main-background);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: fill var(--anim-fast);
+
+    &:hover, &:focus {
+        fill: var(--select-color);
+    }
+}
+
+
+@import "./modal-form";

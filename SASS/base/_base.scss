@@ -1,0 +1,36 @@
+@import "./reset";
+
+body {
+    color: var(--main-color);
+    background-color: var(--main-background);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    padding-top: 80px;
+}
+
+.main__hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+.main__peculiarities {
+    padding-bottom: 94px;
+    padding-top: 94px;   
+}
+.main__performance {
+    padding-bottom: 94px;  
+}
+.main__team {
+    padding-bottom: 94px;
+    padding-top: 94px;   
+}
+.main__clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}

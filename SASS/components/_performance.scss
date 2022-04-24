@@ -1,0 +1,46 @@
+/*---Области деятельности--*/
+.performance {
+    text-align: center;  
+}
+
+.performance__item:not(:last-child) {
+    margin-right: 30px;
+}
+.performance__img, .project__img {
+    display: block;    
+}
+.performance__title {
+    margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    
+    letter-spacing: 0.03em;
+    color: var(--main-grey);
+}
+.performance__list {
+    display: flex;
+}
+ .performance__item {
+    position: relative;
+}
+.performance__wraper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 82px;
+    background: rgba(47, 48, 58, 0.8);
+}
+.performance__subtitle{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text);
+}

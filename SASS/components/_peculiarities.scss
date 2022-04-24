@@ -1,0 +1,42 @@
+ /*Особенности*/
+ .peculiarities {
+    display: flex;
+    flex-direction: column;   
+}
+.peculiarities__wroper {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--section-background);
+}
+.peculiarities__list {
+    display: flex;
+}
+.peculiarities__item {
+    width: calc(100% - 3*30px/ 4);
+}
+.peculiarities__item:not(:last-child) {
+    margin-right: 30px;
+}   
+.peculiarities__title {
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-grey)
+}
+.peculiarities__text {
+    font-family: var(--main-font);
+    font-weight: normal400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
