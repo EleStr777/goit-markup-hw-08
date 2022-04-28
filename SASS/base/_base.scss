@@ -1,6 +1,7 @@
 @import "./reset";
 
 body {
+    
     color: var(--main-color);
     background-color: var(--main-background);
     font-family: var(--main-font);
@@ -8,27 +9,16 @@ body {
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 0.03em;
-    padding-top: 60px;
-
-    @media screen and (min-width: 768px) {
-          padding-top: 80px;
-    }
-        
+    padding-top: 60px;    
+}
+@media screen and (min-width: 768px) {
+    body {
+    padding-top: 80px;}
 }
 
 
-.main__peculiarities {
-    padding-bottom: 94px;
-    padding-top: 94px;   
-}
+
 .main__performance {
     padding-bottom: 94px;  
 }
-.main__team {
-    padding-bottom: 94px;
-    padding-top: 94px;   
-}
-.main__clients {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
+

@@ -1,6 +1,9 @@
 /*---Области деятельности--*/
 .performance {
-    text-align: center;  
+    text-align: center;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }  
 }
 
 .performance__item:not(:last-child) {
